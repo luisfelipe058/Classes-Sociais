@@ -1,0 +1,105 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1
+}
+
+/* pseudoelemento aplicado ao h1 adicionando um conteúdo antes */
+
+h1::before{
+    content: "Tema: ";
+    font-weight: 900;
+    color: #7a048a;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+
+
+h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.4em;
+    text-align: center;
+}
+
+img{
+    height: 500px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px ;
+    
+}
+
+
+nav uL{
+    list-style-type: none;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #8d0404;
+    
+}
+
+nav ul li{
+    margin: 0 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: bisque;
+    padding: 10px;
+    transition: background-color 0.5s;
+}
+
+nav ul li a:hover{
+    background-color: #ff5100;
+    border-radius: 15px;
+}
+
+/* nav ul li a:active{
+    background-color: #00ff15;
+} */
+nav ul li a:visited{
+    background-color: #00ff15;
+    color: #0004ff;
+}
+
+p::first-letter{
+    font-size: 1.3em;
+}
+
+footer{
+    background-color:#8d0404 ;
+    font-size: 13px;
+    padding: 1px;
+    margin-top: 25px;
+    
+}
+
+@media (max-width:480px){
+    img{
+        height: 200px;
+    }
+
+    a{
+        font-size: 12px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    
+}
+
